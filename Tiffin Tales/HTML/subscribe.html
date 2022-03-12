@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../CSS/subscribe.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+    <script type="text/javascript" src="../JS/subscribe.js"></script>
+</head>
+
+<body>
+<center>
+    <div class="subscribe">
+        <h1 class="h1">Subscribe</h1>
+        <hr>
+        <form name="form10" onsubmit="return(validate());" action="../PHP/subscribe.php" method="post">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td>
+                        <label for="name">Enter Your Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Name" class="tb" name="Name" id="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="name">Enter Your email:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="email" class="tb" name="email" id="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="addr">Enter your Address:</label>
+                    </td>
+                    <td>
+                        <textarea type="textarea" placeholder="Address" class="tb1" name="addr"
+                                  id="addr"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Provider-ID">Enter The Provider ID:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Provider ID" class="tb" name="Prov"
+                               id="Provider-ID">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="meals">Select your meals:</label>
+                        <div style="visibility:hidden; color:red; " id="chk_option_error">
+                            Please select at least one option.
+                        </div>
+                    </td>
+                    <td>
+                        <input name="meals" id="meals-0" value="Breakfast" type="checkbox">
+                        <label for="meals-0">Breakfast</label>
+
+                        <input name="meals" id="meals-1" value="Lunch" type="checkbox">
+                        <label for="meals-1">Lunch</label>
+
+                        <input name="meals" id="meals-2" value="Dinner" type="checkbox">
+                        <label for="meals-2">Dinner</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="preferences">Select your meal preferences:</label>
+                    </td>
+                    <td>
+                        <select class="tb" name="preferences" id="preferences">
+                            <option value="option-0" id="preferences-0" selected>Select</option>
+                            <option value="Vegetarian" id="preferences-1">Vegetarian</option>
+                            <option value="Non Vegetarian" id="preferences-2">Non Vegetarian</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="subs_plan">Choose a Subscription Plan:</label>
+                    </td>
+                    <td>
+                        <input name="subs_plan" id="subs_plan-0" value="Weekly" type="radio">
+                        <label for="subs_plan-0">Weekly</label>
+
+                        <input name="subs_plan" id="subs_plan-1" value="Monthly" type="radio">
+                        <label for="subs_plan-1">Monthly</label>
+
+                        <input name="subs_plan" id="subs_plan-2" value="Yearly" type="radio">
+                        <label for="subs_plan-2">Yearly</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="action">Subscription Plan:</label>
+                    </td>
+                    <td>
+                        <input name="action" id="action-0" value="0" type="radio">
+                        <label for="subs_plan-0">Get</label>
+
+                        <input name="action" id="action-1" value="1" type="radio">
+                        <label for="subs_plan-1">Update</label>
+
+                        <input name="action" id="action-2" value="2" type="radio">
+                        <label for="subs_plan-2">Unsubscribe</label>
+                    </td>
+                </tr>
+
+            </table>
+            <button type="submit" class="btn" name="subs" id="subs">Subscribe</button>
+        </form>
+    </div>
+</center>
+</body>
+
+</html>

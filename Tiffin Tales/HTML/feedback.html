@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/feedback.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+    <title>Feedback Form</title>
+    <script type="text/javascript" src="../JS/feedback.js"></script>
+</head>
+
+<body>
+<center>
+
+    <div class="feedback">
+        <h1 class="h1">Feedback Form</h1>
+        <hr>
+        <br>
+        <form name="form4" onsubmit="return(validate());"  action="../PHP/feedback.php" method="post">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td><label for="Name">Enter your Name:</label></td>
+                    <td>
+                        <input type="text" placeholder="Name" name="Name" id="Name"
+                               class="tb"><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="subs">Are you a current subscriber?</label><br>
+                    </td>
+                    <td>
+                        <input name="subs" id="subs-0" value="1" type="radio">
+                        <label for="subs-0">Yes</label>
+
+                        <input name="subs" id="subs-1" value="0" type="radio">
+                        <label for="subs-1">No</label><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="rate">How would you rate the service?</label><br>
+
+                    </td>
+                    <td>
+                        <input name="rate" id="rate-0" value="3" type="radio">
+                        <label for="rate-0">Good</label>
+
+                        <input name="rate" id="rate-1" value="2" type="radio">
+                        <label for="rate-1">Satisfactory</label>
+
+                        <input name="rate" id="rate-2" value="1" type="radio">
+                        <label for="rate-2">Bad</label><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="selection">How did you come to know about our
+                            website?</label><br>
+                    </td>
+                    <td>
+                        <select name="selection" id="selection">
+                            <option value="selection-0 id="option-0" selected>Select Option</option>
+                            <option value="Web Ads" id="option-1">Web Ads</option>
+                            <option value="Social Media" id="option-2">Social Media</option>
+                            <option value="Newspaper" id="option-3">Newspaper</option>
+                            <option value="Friends" id="option-4">Friends</option>
+                        </select><br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <label for="Tell">Tell us more!</label><br>
+            <textarea type="textarea" name="Tell" rows="5" id="Tell" class="tb1"></textarea><br><br>
+
+            <button type="submit" class="btn" name="f_button" value="Submit" id="f_button">Submit</button>
+
+        </form>
+
+    </div>
+
+</center>
+</body>
+
+</html>

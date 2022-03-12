@@ -1,0 +1,46 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.h1 {
+    color: #07635b;
+}
+
+.subscribe {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 30%;
+    background-color: #F9F9F9;
+    border: 1px solid #92ecec;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+    background-color: #2db1b1;
+    font-size: 16px;
+    height: 30px;
+    width: 110px;
+    border: 1px solid #18adad;
+}
+
+.btn:hover {
+    background-color: #cdf1e7;
+    color: black;
+}
+
+.tb {
+    width: 280px;
+    height: 30px;
+    border: 1px solid #2db1b1;
+}
+
+.tb1 {
+    width: 280px;
+    height: 200px;
+    border: 1px solid #2db1b1;
+}

@@ -1,0 +1,88 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.topnav {
+    font-size: 19px;
+    overflow: hidden;
+    position: relative;
+    right: 5px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #798777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f9f9f9;
+    color: #7F7C82;
+}
+
+.intro_h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    color: #7C9473;
+
+}
+
+.h1 {
+    font-size: 40px;
+    color: #7C9473;
+}
+
+.container {
+    position: relative;
+    top: 3%;
+    left: 1%;
+    right: 5%;
+    background-color: #F9F9F9;
+    border: 2px solid #798777;
+    border-radius: 10px;
+    margin: 40px 40px 40px 40px;
+    padding: 0 0 0 0;
+    font-size: 18px;
+    border: 1px solid #92ecec;
+}
+
+.footer {
+    width: 100%;
+    background-color: #c5ebe1;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.s-media {
+    padding: 30px auto 30px auto;
+}
+
+.s-media img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+}
+
+.s-media img:hover {
+    opacity: 0.3;
+}

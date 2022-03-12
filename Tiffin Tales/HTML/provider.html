@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/provider.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+    <title>Provider Registration</title>
+    <script type="text/javascript" src="../JS/provider.js"></script>
+</head>
+
+<body>
+<center>
+    <form name="form11" onsubmit="return(validate());" action="../PHP/provider.php" method="post">
+        <div class="provider_reg">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <h1 class="h1" id="provider_registration">Register as a Provider</h1>
+                <hr>
+
+                <tr>
+                    <td>
+                        <label for="P_name">Name of your business:</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Name" class="tb" name="P_name" id="P_name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City of Service:</label>
+                    </td>
+                    <td>
+                        <select class="tb" name="city" id="city">
+                            <option value="NA" id="city-0" selected>City</option>
+                            <option value="Pune" id="city-1">Pune</option>
+                            <option value="Mumbai" id="city-2">Mumbai</option>
+                            <option value="Nashik" id="city-3">Nashik</option>
+                            <option value="Nagpur" id="city-4">Nagpur</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addr">Provide your Address:</label>
+                    </td>
+                    <td>
+                            <textarea type="textarea" placeholder="Address" class="tb1" name="addr"
+                                      id="addr"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="meals">What meals do you offer:</label>
+                    </td>
+                    <td>
+                        <select name="meals" class="tb" id="meals">
+                            <option value="option-0" id="meals-0" selected>Select Meal</option>
+                            <option value="Vegetarian" id="meals-1">Vegetarian</option>
+                            <option value="Non Vegetarian" id="meals-2">Non Vegetarian</option>
+                            <option value="Both" id="meals-3">Both</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="meal_options">Available Meal
+                            Options:</label>
+                    </td>
+                    <td>
+                        <div class="radio-group">
+
+                            <input name="meal_options" id="meal_options-0" value="Breakfast" type="radio">
+                            <label for="meal_options-0">Breakfast</label>
+
+                            <input name="meal_options" id="meal_options-1" value="Lunch" type="radio">
+                            <label for="meal_options-1">Lunch</label>
+
+                            <input name="meal_options" id="meal_options-2" value="Dinner" type="radio">
+                            <label for="meal_options-2">Dinner</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contact">Enter your Contact Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="Contact Number" class="tb" name="contact" maxlength="10"
+                               id="contact" pattern="^\d{4}\d{3}\d{3}$" required>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <label for="tnc">I agree to the terms and conditions</label>
+
+
+            <input class="checkbox" name="tnc" id="tnc" value="option-1" type="checkbox"><br><br>
+            <div style="visibility:hidden; color:red; " id="chk_option_error">
+                Please agree to Terms And Conditions.
+            </div>
+            <button type="submit" class="btn" name="submit" id="submit">Submit</button>
+            <br>
+
+
+        </div>
+    </form>
+
+</center>
+
+
+</body>
+
+</html>

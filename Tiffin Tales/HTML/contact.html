@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+    <title>Contact</title>
+
+    <script type = "text/javascript">
+        function validate()
+        {
+            if(document.form5.Name.value == "")
+			{
+				alert("Please Provide Name To Proceed")
+				document.form5.Name.focus();
+				return false;
+			}
+
+            if(document.form5.Email.value == "")
+			{
+				alert("Please Provide Email To Proceed")
+				document.form5.Email.focus();
+				return false;
+			}
+
+			var x=document.form5.Email.value;  
+			var atr=x.indexOf("@");  
+			var dot=x.lastIndexOf(".");  
+			if (atr<1 || dot<atr+2 || dot+2>=x.length)
+			{  
+				alert("Please Enter Valid Email ID");  
+				return false;  
+			} 
+
+            if(document.form5.Subject.value == "")
+			{
+				alert("Please Provide Subject To Proceed")
+				document.form5.Subject.focus();
+				return false;
+			}
+
+            if(document.form5.Message.value == "")
+            {
+                alert("Please Provide Message To Proceed \n So That We Can Provide You Accurate Information");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div class="Contact_form">
+            <form name = "form5" onsubmit = "return(validate());" action="mailto:gmrme.64@gmail.com">
+            <h1 class="h1">Contact and Inquiry</h1>
+            <hr><br>
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td><label for="Name">Name:</label></td>
+                    <td><input type="text" placeholder="Name" name="Name" id="Name" class="tb"></td>
+
+
+                <tr>
+                    <td><label for="Email-ID">Email ID:</label></td>
+                    <td><input type="email" placeholder="Email ID" name="Email" id="Email-ID" class="tb"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Subject">Subject:</label>
+                    </td>
+                    <td><textarea type="textarea" placeholder="Subject" name="Subject" id="Subject" class="tb1"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="Message">Message:</label>
+                    </td>
+                    <td><textarea type="textarea" placeholder="Message" name="body" id="Message" class="tb2"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <td><button type="submit" class="btn" name="Cbutton" value="Submit"
+                    id="Cbutton">Submit</button>
+
+                </form>
+        </div>
+    </center>
+</body>
+
+</html>

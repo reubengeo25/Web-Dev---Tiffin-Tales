@@ -1,0 +1,241 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.topnav {
+    font-size: 19px;
+    overflow: hidden;
+    position: relative;
+    right: 5px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #798777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f9f9f9;
+    color: #7F7C82;
+}
+
+.intro {
+    float: left;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 2px;
+    border-color: #96C7C1;
+    margin-left: 5%;
+    margin-right: 30px;
+    margin-top: 200px;
+    color: black;
+    background-color: #F9F9F9;
+    text-align: left;
+    width: 580px;
+    height: 200px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+
+}
+
+.intro h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #7C9473;
+
+}
+
+.img1 {
+    margin-top: 67px;
+    margin-left: 50px;
+    position: relative;
+    left: 5%;
+    right: 5%;
+}
+
+#newsletter {
+    text-align: center;
+    align-self: center;
+    margin: auto auto auto auto;
+    margin-top: 50px;
+    color: #3B5360;
+    background-color: #BEE5D3;
+    width: 1100px;
+    height: 140px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+}
+
+#em {
+    border: 2px solid #96C7C1;
+    size: 40px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.news {
+    width: 450px;
+    height: 120px;
+    margin-left: 40px;
+}
+
+.eml {
+    width: 400px;
+    height: 40px;
+    text-align: right;
+    margin-top: 65px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    height: 35px;
+    font-size: 15px;
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #96C7C1;
+    background-color: #F9F9F9;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #96C7C1;
+    color: white;
+}
+
+.discount {
+
+    margin: auto auto auto auto;
+    margin-top: 50px;
+    color: #3B5360;
+    background-color: #E8F6EF;
+    text-align: left;
+    width: 1100px;
+    height: 280px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #9FE6A0;
+    border-radius: 20px;
+}
+
+.containers {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containers1 {
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #c5ebe1;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.s-media {
+    padding: 30px auto 30px auto;
+}
+
+.s-media img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+}
+
+.s-media img:hover {
+    opacity: 0.3;
+}
+
+.h2 {
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.btn {
+    color: white;
+    background-color: #467e64;
+    font-size: 16px;
+    height: 30px;
+    width: 140px;
+    margin-top: 20px;
+
+    border: 2px solid #798777;
+}
+
+.btn2 {
+    height: 35px;
+    font-size: 15px;
+    width: 220px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #96C7C1;
+    background-color: #F9F9F9;
+    border-radius: 6px;
+}
+
+.provider {
+
+    margin: auto auto auto auto;
+    margin-top: 50px;
+    color: #3B5360;
+    background-color: #E8F6EF;
+    text-align: center;
+    width: 1100px;
+    height: 100px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    border: 2px solid #9FE6A0;
+    border-radius: 20px;
+}
+

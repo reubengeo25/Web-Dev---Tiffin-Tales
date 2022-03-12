@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/login.css">
+
+    <title>Login</title>
+
+    <script type="text/javascript">
+        function validate() {
+            if (document.form1.Uname.value == "") {
+                alert("Please Provide Username To Proceed !!");
+                document.form1.Uname.focus();
+                return false;
+            }
+
+            if (document.form1.pwd.value == "") {
+                alert("Please Provide Password To Proceed !!");
+                document.form1.pwd.focus();
+                return false;
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<center>
+    <form name="form1" onsubmit="return(validate());" action="../PHP/login.php" method="post">
+        <div class="login">
+            <div class="Login_img">
+                <center><img src="../images/login.png" width="200px" height="200px"></center>
+            </div>
+            <center><h1>Login</h1></center>
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                <tr>
+                    <td align="right">Enter Username :</td>
+                    <td><input type="text" name="Uname" placeholder="Username" id="t3" class="tb"/></td>
+                </tr>
+                <tr>
+                    <td align="right">Enter Password :</td>
+                    <td><input type="password" name="pwd" placeholder="Password" id="t4" class="tb"/></td>
+                </tr>
+
+            </table>
+            <input type="submit" value="login" onclick="" class="btn"/></td>
+            <br><br>
+            <h3>Not a registered user?<br>
+                <i>
+                    <button name="Register" class="btn2" onclick=location.href="Register.html"> Regsiter</button>
+                </i><br><br>
+
+            </h3>
+
+        </div>
+    </form>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+<!DOCTYPE <!DOCTYPE html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tiffin Tales</title>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+
+    <script>
+        function validate() {
+            if (document.form3.Email.value == "") {
+                alert("Please Provide Email To Register")
+                document.form2.Email.focus();
+                return false;
+            }
+
+            var x = document.form3.Email.value;
+            var atr = x.indexOf("@");
+            var dot = x.lastIndexOf(".");
+            if (atr < 1 || dot < atr + 2 || dot + 2 >= x.length) {
+                alert("Please Enter Valid Email ID");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+<body><i>
+    <div class="topnav"><i>
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="findservices.html">Find Services</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="subscribe.html">Subscribe</a></i>
+
+    </div>
+    <br>
+    <div class="intro"><p><i>
+        <h1> Tiffin Tales</h1>
+        We are a multi-cuisine Tiffin Platform offering a wide variety of meal options.<br>
+        Get the freshest meals delivered at your doorstep.
+</i> </p>
+</div>
+<br>
+<div class="img1"><img src="../images/heroimg.png">
+</div>
+
+<div class="discount">
+    <div class="containers">
+        <img src="../images/img1.png">
+    </div>
+    <div class="containers">
+        <img src="../images/img2.png">
+    </div>
+    <div class="containers">
+        <img src="../images/img3.jpg">
+    </div>
+    <div class="containers1">
+        <p>
+        <h2><b>20% OFF</b></h2>
+        Trial Tiffin For Discount<br><br>
+        <i>
+            <button name="subs" class="btn2" onclick=location.href="subscribe.html"> Subscribe</button>
+        </i><br><br>
+
+        </p>
+    </div>
+
+</div>
+
+<header id="newsletter">
+    <div class="news">
+        <p>
+        <h2>Join Newsletter</h2>
+        Get notified with the latest news and recent offers from the “Tiffin Tales”</p>
+    </div>
+    <form name="form3" onsubmit="return(validate());" action="../PHP/index.php" method="post">
+        <div class="eml">
+            <input type="text" name="Email" placeholder="Your Email ID" size=40 id="em">
+            <i>
+                <button type="submit" name="Join"> Join</button>
+            </i>
+        </div>
+    </form>
+
+</header>
+
+<div class="provider">
+    Want to Register as a Provider ?<br>
+    <i>
+        <button name="Provider" class="btn" onclick=location.href="provider.html"> Join</button>
+    </i><br>
+
+</div>
+
+<div class="footer">
+    <div class="s-media">
+        <a href=""><img src="../images/fb.jpg"></a>
+        <a href=""><img src="../images/ig.jpg"></a>
+        <a href=""><img src="../images/tw1.png"></a>
+    </div>
+    <h2 class="h2"> We would love your Feedback </h2>
+    <i>
+        <button name="Feed_back" class="btn2" onclick=location.href="feedback.html"> Tell us more!!</button>
+    </i><br><br>
+
+    Copyright &copy; tiffintales.in 2022. All rights reserved.
+</div>
+
+
+</i>  </body>
+</html>

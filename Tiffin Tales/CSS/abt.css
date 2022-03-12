@@ -1,0 +1,98 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.topnav {
+    font-size: 19px;
+    overflow: hidden;
+    position: relative;
+    right: 5px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #798777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #F9F9F9;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #f9f9f9;
+    color: #7F7C82;
+}
+
+.ourStory {
+    display: flex;
+    flex-direction: row;
+}
+
+.Goals {
+    width: 60%;
+}
+
+.h1 {
+    font-family: 'Sacramento', cursive;
+    position: relative;
+    left: 20px;
+    font-size: 60px;
+    color: #7C9473;
+    margin: 5px 5px 5px 5px;
+}
+
+.Our_story {
+    position: relative;
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.ourStory__title {
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+    color: #7C9473;
+    margin: 5px 5px 5px 5px;
+}
+
+.ourStory__subtitle {
+    margin: 0px 5px 5px 5px;
+    font-size: 18px;
+}
+
+.goals {
+    position: relative;
+    top: 2%;
+    left: 1%;
+    right: 15%;
+    font-size: 18px;
+}
+
+.h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 46px;
+    color: #7C9473;
+    margin: 5px 5px 5px 5px;
+}
+
+.goal {
+    margin-left: 2%;
+    position: relative;
+    top: 5%;
+    margin-top: 5%;
+}

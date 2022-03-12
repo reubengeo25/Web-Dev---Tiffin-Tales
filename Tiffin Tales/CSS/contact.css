@@ -1,0 +1,53 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.h1 {
+    color: #159489;
+}
+
+.Contact_form {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    right: 30%;
+    background-color: #F9F9F9;
+    border: 2px solid #798777;
+    border-radius: 10px;
+    padding: 20px 20px 30px;
+    font-size: 18px;
+    border: 1px solid #92ecec;
+}
+
+.btn {
+    color: white;
+    background-color: #2db1b1;
+    font-size: 16px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid #18adad;
+}
+
+.btn:hover {
+    background-color: #cdf1e7;
+    color: black;
+}
+
+.tb {
+    width: 320px;
+    height: 30px;
+    border: 1px solid #2db1b1;
+}
+
+.tb1 {
+    width: 320px;
+    height: 40px;
+    border: 1px solid #2db1b1;
+}
+
+.tb2 {
+    width: 320px;
+    height: 200px;
+    border: 1px solid #2db1b1;
+}

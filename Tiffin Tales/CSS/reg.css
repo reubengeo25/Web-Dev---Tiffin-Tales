@@ -1,0 +1,51 @@
+body {
+    background-color: #E4EFE7;
+    color: rgb(5, 1, 1);
+}
+
+.h1 {
+    color: #159489;
+}
+
+#Register {
+
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    background-color: #F9F9F9;
+    border: 1px solid #92ecec;
+    border-radius: 10px;
+    padding: 20px 70px 50px;
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+    background-color: #2db1b1;
+    font-size: 16px;
+    height: 30px;
+    width: 140px;
+    border: 1px solid #18adad;
+}
+
+.btn:hover {
+    background-color: #cdf1e7;
+    color: black;
+}
+
+.tb {
+    width: 180px;
+    height: 30px;
+    border: 1px solid #2db1b1;
+}
+
+.reg_img {
+    width: 180px;
+    height: 180px;
+}
+
+.img {
+    width: 120px;
+
+}

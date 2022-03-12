@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../CSS/reg.css">
+    <script type="text/javascript" src="../JS/Register.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/icons8-rice-bowl-96.png">
+</head>
+
+<body>
+<center>
+    <header id="Register">
+        <table cellspacing="2" align="center" cellpadding="8" border="0">
+            <tr>
+                <td class="img">
+                    <img src="../images/icon-register.png" alt="" height="220px" width="220px">
+                <td>
+                    <form name="form2" onsubmit="return(validate());" action="../PHP/register.php" method="post">
+                        <div class="textt">
+                            <h1 class="h1">
+                                <center>Create Your Account</center>
+                            </h1>
+                            <hr>
+                            <!-- create account div -->
+                            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                                <tr>
+                                    <td align="right">Enter Name :</td>
+                                    <td><input type="text" placeholder="Enter user here" name="Name" id="t1"
+                                               class="tb"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Enter Email ID :</td>
+                                    <td><input type="text" placeholder="Enter Email ID here" name="Email" id="t2"
+                                               class="tb"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Enter Username :</td>
+                                    <td><input type="text" placeholder="Enter Username here" name="username" id="t3"
+                                               class="tb"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Enter Password :</td>
+                                    <td><input type="password" placeholder="Enter Password here" name="password" id="t4"
+                                               class="tb"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Confirm Password :</td>
+                                    <td><input type="password" placeholder="Enter Password here" name="conf_password"
+                                               id="t5" class="tb"/>
+                                    </td>
+                                    <br>
+                                </tr>
+
+
+                            </table>
+                            <br>
+                        </div>
+                        <center><input type="reset" value="Clear Form" class="btn">
+                            <input type="submit" value="Create Account" class="btn">
+                        </center>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </header>
+</center>
+</body>
+
+</html>
